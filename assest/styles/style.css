@@ -6,7 +6,13 @@
   font-family: "Comic Neue", cursive;
 }
 
-.title-container {
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.containt-title {
   display: flex;
   height: 600px;
 }
@@ -21,7 +27,7 @@
   height: 100%;
   object-fit: cover;
 }
-.sub-title-containt {
+.containt-sub-title {
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -41,13 +47,8 @@
 .logo:hover {
   transform: scale(1.1);
 }
-main {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
 
-.nav-containt {
+.containt-nav {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -58,14 +59,8 @@ main {
   width: 100%;
 }
 
-.date-containt {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 250px;
-  width: 100%;
-}
-.date-containt-home {
+.containt-date,
+.containt-date-home {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -73,7 +68,17 @@ main {
   width: 100%;
 }
 
-.image-hockey-1 {
+.image-hockey-1-home {
+  position: relative;
+  border: 2px solid black;
+  border-radius: 5%;
+  top: 25%;
+  right: 10%;
+  left: 33%;
+  width: 50%;
+  height: 70%;
+}
+.image-hockey-1-contact {
   position: relative;
   border: 2px solid black;
   border-radius: 5%;
@@ -84,7 +89,29 @@ main {
   height: 70%;
 }
 
-.email-containt {
+.image-hockey-1-rule {
+  position: relative;
+  border: 2px solid black;
+  border-radius: 5%;
+  top: 40%;
+  right: 10%;
+  left: 10%;
+  width: 85%;
+  height: 30%;
+}
+
+.image-hockey-1-info {
+  position: relative;
+  border: 2px solid black;
+  border-radius: 5%;
+  top: 10%;
+  right: 10%;
+  left: 10%;
+  width: 85%;
+  height: 50%;
+}
+
+.containt-email {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -92,18 +119,15 @@ main {
   width: 100%;
 }
 
-.about-containt {
+.containt-about {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   height: 350px;
-  width: 200%;
-}
-.about-containt-img {
-  width: 50%;
+  width: 100%;
 }
 
-.image-hockey-1--about {
+.image-hockey-1-about {
   position: relative;
   border: 2px solid black;
   border-radius: 5%;
@@ -114,7 +138,37 @@ main {
   height: 40%;
 }
 
-.nav-containt--about {
+.containt-mision,
+.containt-vision,
+.containt-general {
+  display: flex;
+  flex-direction: column;
+}
+
+.containt-nav-rules,
+.containt-nav-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  position: relative;
+  left: 5%;
+  width: 25%;
+}
+
+.containt-rules {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.containt-game-info {
+  height: 500px;
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+}
+
+.containt-nav-game-info {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -122,18 +176,32 @@ main {
   position: relative;
   left: 5%;
   height: 250px;
-  width: 50%;
+  width: 25%;
 }
-.mision-containt,
-.vision-containt,
-.general-containt {
-  display: flex;
-  flex-direction: column;
+
+.containt-rules-img,
+.cantaint-game-info-img,
+.containt-rules-img,
+.containt-about-img {
+  width: 30%;
 }
-/* 
-.container-title-rules {
+
+.table-title {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-} */
+}
+.table-1 {
+  display: block;
+}
+
+.table-date {
+  display: flex;
+  justify-content: space-around;
+}
+
+.list {
+  list-style-type: lower-latin;
+}
+
+.list2 {
+  list-style-type: circle;
+}

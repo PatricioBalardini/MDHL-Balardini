@@ -1,6 +1,5 @@
 * {
-  width: 99.8%;
-  margin: 1px;
+  margin: 0.5px;
   padding: 0;
   box-sizing: border-box;
   font-family: "Comic Neue", cursive;
@@ -17,7 +16,7 @@ main {
   height: 600px;
 }
 .title {
-  position: absolute;
+  position: fixed;
   left: 2%;
   font-size: 120%;
 }

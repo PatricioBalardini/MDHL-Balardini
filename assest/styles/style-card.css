@@ -1,0 +1,193 @@
+h2 {
+  border: 2px solid black;
+  border-radius: 6px;
+  border-radius: 5px;
+  padding: 7px;
+  background-color: #f8e130;
+  color: black;
+}
+
+p {
+  font-size: 130%;
+  text-align: center;
+}
+
+h3 {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  padding: 5px;
+}
+
+table {
+  width: 97%;
+  margin-top: 13%;
+  margin-left: 2%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: flex-start;
+}
+
+.containt-main-about,
+.containt-main-contact,
+.containt-main-rules-menu {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+}
+.containt-main-contact {
+  height: 100%;
+  flex-direction: column;
+  justify-content: end;
+}
+.containt-main-rules-menu {
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.containt-sub-title-home:hover {
+  border: black 0.2em solid;
+  transform: scale(1.5);
+}
+
+.containt-date {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.containt-home-img {
+  width: 70%;
+  height: 80%;
+  top: 17%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mision,
+.vision,
+.email,
+.title-rules-menu,
+.info,
+.containt-sub-title-home {
+  width: 20%;
+  height: 40%;
+  top: 27%;
+  font-size: 10px;
+  background-color: #5fa199;
+  border-radius: 0.4em;
+  box-shadow: 0.3em 0.3em 0.7em 5 rgb(198 72 50);
+  transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: #f8e130 0.2em solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: 1s;
+}
+.containt-sub-title-home {
+  width: 13%;
+  height: 30%;
+  top: 22%;
+  left: 70%;
+  font-size: 10px;
+  position: absolute;
+}
+
+.title-rules-menu {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  margin-left: 38%;
+  border-radius: 2%;
+  opacity: 0.8;
+}
+.title-rules-menu:hover {
+  border: black 0.2em solid;
+  transform: scale(1.4);
+}
+
+.email {
+  width: 50%;
+  height: 20%;
+  margin-left: 5%;
+}
+
+.email:hover {
+  border: black 0.2em solid;
+  transform: scale(1.1);
+}
+.mision:hover,
+.vision:hover,
+.info:hover {
+  border: black 0.2em solid;
+  transform: scale(1.5);
+}
+.mision {
+  left: 7%;
+}
+.vision {
+  left: 30%;
+}
+.info {
+  left: 54%;
+}
+
+@media (max-width: 390px) {
+  .containt-main-about {
+    top: -10%;
+    justify-content: space-evenly;
+    position: relative;
+  }
+  .containt-main-contact {
+    width: 90%;
+    justify-content: space-evenly;
+    position: relative;
+  }
+  .containt-sub-title-home {
+    width: 45%;
+    height: 30%;
+    top: 15%;
+    left: 30%;
+  }
+  .email {
+    width: 100%;
+    height: 20%;
+    margin-left: 10%;
+  }
+  .mision,
+  .vision,
+  .info {
+    width: 30%;
+    height: 60%;
+    top: 27%;
+    left: 54%;
+  }
+  .mision:hover,
+  .vision:hover,
+  .info:hover {
+    border: black 0.2em solid;
+    transform: scale(0);
+  }
+  .containt-main-rules-menu {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .title-rules-menu {
+    width: 90%;
+    height: 15%;
+    margin-left: 1%;
+    opacity: none;
+    margin-top: -25%;
+  }
+}

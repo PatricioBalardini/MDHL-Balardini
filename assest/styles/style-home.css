@@ -1,0 +1,209 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+header,
+footer {
+  width: 100%;
+  background-color: #5fa199;
+  display: flex;
+}
+
+header {
+  height: 17%;
+  position: fixed;
+  border-bottom: 2px solid #f8e130;
+  justify-content: space-around;
+}
+
+footer, .footer-rules {
+  height: 100%;
+  color: #f8e130;
+  border-top: 2px solid #f8e130;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-rules {
+  position: fixed;
+  justify-content: flex-start;
+}
+
+h1,
+.rule-img-2 {
+  display: none;
+}
+
+nav {
+  width: 70%;
+  top: 120px;
+  position: fixed;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+section {
+  width: 100%;
+  height: 800px;
+  position: static;
+  background-color: black;
+}
+
+.seccion-containt {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.header-logo {
+  right: 0.5%;
+  position: relative;
+  transition: 0.5s;
+}
+.header-logo:hover {
+  transform: scale(1.2);
+}
+
+.header-title-img {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header-hockey,
+.header-mighty {
+  width: 40%;
+  height: 40%;
+  transition: 0.5s;
+}
+
+.header-mighty {
+  margin-top: 5%;
+  margin-left: 6%;
+}
+
+.header-hockey {
+  margin-top: 4.7%;
+  margin-left: -2%;
+  padding: 0.4%;
+}
+
+.main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.main-img-1,
+.main-img-2,
+.rule-img-2,
+.rule-img-1 {
+  width: 25%;
+  position: fixed;
+  top: 23%;
+  left: 3%;
+  object-fit: cover;
+  border: 2px solid #f8e130;
+  border-radius: 6px;
+  transition: 3s;
+}
+.main-img-2 {
+  top: 57%;
+}
+.rule-img-1 {
+  position: absolute;
+  width: 98%;
+  height: 74%;
+  left: 1%;
+  margin-top: -1%;
+  object-fit: cover;
+}
+
+.main-img-1:hover,
+.main-img-2:hover {
+  transform: scale(1.2);
+}
+
+.contact-img-1 {
+  height: 45%;
+  margin-top: 4%;
+  margin-bottom: 2%;
+  object-fit: cover;
+  border: 2px solid #f8e130;
+  border-radius: 6px;
+  transition: 2s;
+}
+
+.contact-img-1:hover {
+  transform: scale(1.1);
+}
+
+.contact-img-2 {
+  display: none;
+}
+
+@media (max-width: 390px) {
+  header {
+    height: 80px;
+  }
+
+  section {
+    height: 825px;
+  }
+
+  .header-hockey {
+    margin-top: 4.7%;
+    margin-left: -2%;
+    padding: 0.4%;
+    transition: 0.5s;
+  }
+
+  .main-img-1,
+  .main-img-2,
+  .rule-img-1,
+  .contact-img-1,
+  .containt-home-img {
+    display: none;
+  }
+
+  .rule-img-2 {
+    display: flex;
+  }
+
+  .contact-img-2 {
+    width: 100%;
+    margin-left: 11%;
+    border: 2px solid #f8e130;
+    border-radius: 6px;
+    transition: 2s;
+    object-fit: cover;
+    display: flex;
+  }
+
+  nav {
+    width: 30%;
+    height: 40%;
+    top: 12%;
+    left: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .nav-phone {
+    width: 95%;
+    height: 3%;
+    top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .rule-img-2 {
+    width: 90%;
+    height: 50%;
+    left: 5.5%;
+    margin-top: 20%;
+  }
+}
